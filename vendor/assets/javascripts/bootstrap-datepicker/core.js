@@ -1192,7 +1192,8 @@
 					break;
 				case 13: // enter
 					focusDate = this.focusDate || this.dates.get(-1) || this.viewDate;
-					this._toggle_multidate(focusDate);
+					//Commented line due to the bug hit "enter" to date was clean
+					//this._toggle_multidate(focusDate);
 					dateChanged = true;
 					this.focusDate = null;
 					this.viewDate = this.dates.get(-1) || this.viewDate;
